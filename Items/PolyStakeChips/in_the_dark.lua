@@ -1,0 +1,22 @@
+local in_the_dark = {
+	object_loader = PolychromeStake,
+	object_type = "PolyStakeChip",
+	order = 14,
+	key = "in_the_dark",
+	pos = { x = 7, y = 1 },
+	atlas = "chips_atlas",
+	unlocked = false,
+	point_requirement = 850,
+	stack = 3,
+	points = { 50, 100, 200 },
+	calculate = function(self, context)
+		if context.setting_blind then
+			G.GAME.pstake_draw_face_down = G.GAME.pstake_poly_chips[self.key]
+		end
+		if context.stay_flipped and G.GAME.pstake_draw_face_down and G.GAME.pstake_draw_face_down > 0 then
+			G.GAME.pstake_draw_face_down = G.GAME.pstake_draw_face_down - 1
+			return { stay_flipped = true }
+		end
+	end,
+}
+return { name = { "PolyStakeChips" }, items = { in_the_dark } }

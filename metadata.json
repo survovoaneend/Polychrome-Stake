@@ -1,0 +1,19 @@
+{
+  "id": "Polychrome_Stake",
+  "name": "Polychrome Stake",
+  "prefix": "pstake",
+  "author": [
+    "Nevernamed",
+    "Survivalaren",
+    "Jumbocarrot",
+    "Vitellary"
+  ],
+  "description": "customizable stake :D",
+  "main_file": "polystake.lua",
+  "badge_colour": "8b61ad",
+  "version": "1.0.0",
+  "dependencies": [
+    "Steamodded (>=26.1002.*)",
+    "Lovely (>=0.9.0)"
+  ]
+}
