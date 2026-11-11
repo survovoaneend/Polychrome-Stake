@@ -11,6 +11,8 @@
   "description": "customizable stake :D",
   "main_file": "polystake.lua",
   "badge_colour": "8b61ad",
+  "icon_path": "modicon.png",
+  "icon_width": 32,
   "version": "1.0.0",
   "dependencies": [
     "Steamodded (>=26.1002.*)",
