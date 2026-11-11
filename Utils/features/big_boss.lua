@@ -8,9 +8,9 @@ end
 
 function PolychromeStake.enable_big_boss()
 	G.GAME.pstake_has_big_boss = true
-	G.GAME.round_resets.blind_states.Big = "Hide"
+	G.GAME.round_resets.blind_choices.Big_Boss = SMODS.get_new_blind("boss")
+	G.GAME.round_resets.blind_tags.Big_Boss = get_next_tag_key()
 	G.GAME.round_resets.blind_states.Big_Boss = "Upcoming"
-	G.GAME.round_resets.blind_choices.Big_Boss = SMODS.get_new_blind("big_boss")
-	-- Skipping the extra boss gives the Big Blind's tag (no extra tag roll, so the seed is unaffected)
-	G.GAME.round_resets.blind_tags.Big_Boss = G.GAME.round_resets.blind_tags.Big
+	G.GAME.round_resets.blind_states.Big = "Hide"
+	G.GAME.round_resets.blind_order = { "Small", "Big_Boss", "Boss" }
 end
