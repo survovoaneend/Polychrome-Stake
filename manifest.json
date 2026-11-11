@@ -1,0 +1,9 @@
+{
+	"name": "Polychrome_Stake",
+	"description": "Customizable difficulty",
+	"website_url": "https://github.com/survovoaneend/Polychrome-Stake",
+	"version_number": "1.0.0",
+	"dependencies": [
+		"Steamodded-Steamodded-26.1002.0"
+	]
+}
